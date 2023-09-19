@@ -9,7 +9,7 @@ namespace LogSorting
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int[] initial = { 4, 9, 1, 7, 5, 6, 2, 8, 12, 10 };
             Console.WriteLine("Начальный массив");
@@ -25,9 +25,9 @@ namespace LogSorting
             }
             int[] mergesort = MergeSortArray(initial, 0, initial.Length - 1);
             Console.WriteLine("\nМассив, сортированный сортировкой Мерге");
-            for (int i = 0; i < qsort.Length; i++)
+            for (int i = 0; i < mergesort.Length; i++)
             {
-                Console.Write(" {0}", qsort[i]);
+                Console.Write($" {mergesort[i]}");
             }
 
             Console.ReadLine();
