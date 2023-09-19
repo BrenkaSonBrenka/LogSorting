@@ -15,13 +15,13 @@ namespace LogSorting
             Console.WriteLine("Начальный массив");
             for (int i = 0; i < initial.Length; i++)
             {
-                Console.Write(" {0}", initial[i]);
+                Console.Write($" {initial[i]}");
             }
             int[] qsort = QSortArray(initial, 0, initial.Length - 1);
             Console.WriteLine("\nМассив, сортированный быстрой сортировкой");
             for (int i = 0; i < qsort.Length; i++)
             {
-                Console.Write(" {0}", qsort[i]);
+                Console.Write($" {qsort[i]}");
             }
             int[] mergesort = MergeSortArray(initial, 0, initial.Length - 1);
             Console.WriteLine("\nМассив, сортированный сортировкой Мерге");
